@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Outfit:wght@300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom palette matching CM Bikes logo (Cyan / Black / Slate / Metallic Grey) */
+  --color-brand-cyan: #00b0ff;
+  --color-brand-dark: #090a0f;
+  --color-brand-gray-light: #f8fafc;
+  --color-brand-teal: #00e5ff;
+}
+
+/* Glassmorphism custom classes and premium custom styles */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-nav {
+  background: rgba(9, 10, 15, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px rgba(0, 176, 255, 0.4);
+}
+
+.neon-border {
+  box-shadow: 0 0 15px rgba(0, 176, 255, 0.2);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #090a0f;
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 176, 255, 0.35);
+  border-radius: 9999px;
+  border: 2px solid #090a0f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 176, 255, 0.65);
+}
+
+/* Ensure firefox supports custom scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 176, 255, 0.35) #090a0f;
+}
+
+/* Hide scrollbar helper class */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.logobikes{
+  width: 200px;
+    height: 200px;
+    background: none;
+    border: none;
+    border-radius: 218px;
+}

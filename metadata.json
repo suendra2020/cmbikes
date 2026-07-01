@@ -1,0 +1,6 @@
+{
+  "name": "CM Bikes",
+  "description": "Premium luxury motorcycle showroom in Channasandra, Bengaluru. Discover new and certified pre-owned superbikes with premium finance, insurance, and exchange programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
